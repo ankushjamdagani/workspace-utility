@@ -1,0 +1,77 @@
+// inlines
+.ibc {
+  font-size: 0;
+}
+.ibm, .ibt, .ibb {
+  display: inline-block;
+}
+.ibt {
+  vertical-align: top;
+}
+.ibm {
+  vertical-align: middle;
+}
+.ibb {
+  vertical-align: bottom;
+}
+
+// floats
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+
+// displays
+.hide{
+  display: none!important;
+}
+.show{
+  display: block!important;
+}
+@media all and (max-width: 899px) {
+  .hidden-xs {
+    display: none;
+  }
+  .visible-sm,
+  .visible-md,
+  .visible-lg {
+    display: none;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 899px) {
+  .hidden-sm {
+    display: none;
+  }
+  .visible-xs,
+  .visible-md,
+  .visible-lg {
+    display: none;
+  }
+}
+@media all and (min-width: 900px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none;
+  }
+  .visible-xs,
+  .visible-sm,
+  .visible-lg {
+    display: none;
+  }
+}
+@media all and (min-width: 1200px) {
+  .hidden-lg {
+    display: none;
+  }
+  .visible-xs
+  .visible-sm,
+  .visible-md {
+    display: none;
+  }
+}

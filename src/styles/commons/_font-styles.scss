@@ -1,0 +1,68 @@
+// Check which font-weights are used and then remove the unnecessary font-weights
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre:400,400i,500,500i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700');
+
+// Font Families - normal | mono | fancy
+[class*="__ff-normal__"] {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+[class*="__ff-mono__"] {
+  font-family: 'Fira Mono', monospace;
+  font-weight: 400;
+}
+[class*="__ff-fancy__"] {
+  font-family: 'Proza Libre', sans-serif;
+  font-weight: 400;
+}
+
+// Font Weights - xl | l | m | b | xb | xxb
+[class*="__fw-xl__"] {
+  font-weight: 100;
+}
+[class*="__fw-l__"] {
+  font-weight: 300;
+}
+[class*="__fw-m__"] {
+  font-weight: 400;
+}
+[class*="__fw-b__"] {
+  font-weight: 500;
+}
+[class*="__fw-xb__"] {
+  font-weight: 700;
+}
+[class*="__fw-xxb__"] {
+  font-weight: 900;
+}
+
+// Font Sizes - xs | s | m | l | xl | xxl
+[class*="__fs-xs__"] {
+  font-size: 10px;
+}
+[class*="__fs-s__"] {
+  font-size: 12px;
+}
+[class*="__fs-m__"] {
+  font-size: 14px;
+}
+[class*="__fs-l__"] {
+  font-size: 16px;
+}
+[class*="__fs-xl__"] {
+  font-size: 18px;
+}
+[class*="__fs-xxl__"] {
+  font-size: 20px;
+}
+[class*="__fs-xxxl__"] {
+  font-size: 24px;
+}
+
+[class*="_italic_"] {
+  font-style: italic;
+}
+[class*="_underline_"] {
+  text-decoration: underline;
+}

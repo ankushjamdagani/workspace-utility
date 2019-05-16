@@ -50,15 +50,15 @@ class PageContainer extends React.Component{
   render(){
     return (
       <div className="app-page-container">
-        <div className="actions-container">
+        <div className="hide actions-container">
           <div className="action-item toggle-git"
               onClick={this.toggleGitPanel}
           >
             <i className="fab fa-github-alt"></i>
           </div>
         </div>
-        <div className="header-container">Hi {this.state.profileDetails.name}</div>
-        <div className={"git-container " + (this.state.showGitPanel ? 'active' : '')}>
+        <div className="hide header-container __ff-mono__fs-xl__fw-b__">Hi {this.state.profileDetails.name}</div>
+        <div className={"hide git-container " + (this.state.showGitPanel ? 'active' : '')}>
           <div className="overlay-container"></div>
           <div className="content-container">
             <GitContent
