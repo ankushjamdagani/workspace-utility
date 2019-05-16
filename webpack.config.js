@@ -31,7 +31,15 @@ module.exports = {
               loader: "html-loader"
             }
           ]
-        }
+        },
+        {
+          test: /\.(scss|css)$/,
+          use: [
+            'style-loader',
+            'css-loader?sourceMap',
+            'sass-loader?sourceMap',
+          ],
+        },
       ]
     },
     plugins: [

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Popup from './PopupContainer';
+import Popup from './components/views/PopupContainer';
 
 ReactDOM.render(
     <Popup/>,

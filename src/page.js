@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import PageContainer from './PageContainer';
+import PageContainer from './components/views/PageContainer';
 
 ReactDOM.render(
     <PageContainer/>,

@@ -1,0 +1,50 @@
+.git-content-container{
+  .profile-block{
+    border-bottom: solid 1px #e1e1e1;
+    padding-bottom: 15px;
+    .profile-pic{
+      width: 100px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 0 auto;
+      img{
+        width: 100%;
+      }
+    }
+    .profile-details{
+      padding-top: 10px;
+      text-align: center;
+      .name-container, .link-container{
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 5px;
+      }
+    }
+  }
+  .list-container{
+    .list-item{
+      border-bottom: dashed 1px #e1e1e1;
+      padding: 15px 0;
+      cursor: pointer;
+      &:hover{
+        background: #f7f7f7;
+      }
+
+      .list-title{
+        color: #333;
+        display: inline-block;
+        a{
+          font-size: 12px;
+          margin-right: 5px;
+        }
+      }
+      .list-description{
+        margin-top: 10px;
+        color: #a9a9a9;
+        padding-left: 15px;
+        font-style: italic;
+        font-size: .8em;
+      }
+    }
+  }
+}
