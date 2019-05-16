@@ -1,18 +1,44 @@
 import React from 'react';
+import moment from 'moment';
 
-class Background extends React.Component {
+import '../../styles/sections/backgroundContainer.scss'
+
+class BackgroundContainer extends React.Component {
   constructor(props){
     super(props)
   }
 
-  render(){
+  componentDidMount(){
+    this.startInterval( 1000 )
+  }
 
+  componentWillUnmount(){
+    clearInterval( this.intervalId )
+  }
+
+  startInterval( ms ){
+    this.intervalId = setInterval(() => {
+      this.setState({})
+    }, ms)
+  }
+
+  render(){
     return (
       <div className="background-container">
         <div className="background-inner-container">
-          Hi background \m/
+          <div className="time-container">
+            <div className="time-background-container">
+              <div className="seconds-hand"></div>
+              <div className="seconds-shadow-hand"></div>
+            </div>
+            <div className="time-text __ff-normal__fs-hxl__fw-xxb__">
+              {moment().format('HH:mm:ss')}
+            </div>
+          </div>
         </div>
       </div>
     )
   }
 }
+
+export default BackgroundContainer

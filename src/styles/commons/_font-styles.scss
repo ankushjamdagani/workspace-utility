@@ -37,7 +37,7 @@
   font-weight: 900;
 }
 
-// Font Sizes - xs | s | m | l | xl | xxl
+// Font Sizes - xs | s | m | l | xl | xxl | hs | hm | hl | hxl | hxxl
 [class*="__fs-xs__"] {
   font-size: 10px;
 }
@@ -53,11 +53,17 @@
 [class*="__fs-xl__"] {
   font-size: 18px;
 }
-[class*="__fs-xxl__"] {
+[class*="__fs-hs__"] {
   font-size: 20px;
 }
-[class*="__fs-xxxl__"] {
+[class*="__fs-hm__"] {
   font-size: 24px;
+}
+[class*="__fs-hl__"] {
+  font-size: 28px;
+}
+[class*="__fs-hxl__"] {
+  font-size: 32px;
 }
 
 [class*="_italic_"] {

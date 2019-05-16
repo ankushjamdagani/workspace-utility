@@ -1,6 +1,10 @@
 import React from 'react';
 import GitContent from '../sections/GitContent';
 
+// sections
+import BackgroundContainer from '../sections/BackgroundContainer'
+
+
 import '../../styles/views/pageContainer.scss';
 
 class PageContainer extends React.Component{
@@ -50,6 +54,7 @@ class PageContainer extends React.Component{
   render(){
     return (
       <div className="app-page-container">
+        <BackgroundContainer />
         <div className="hide actions-container">
           <div className="action-item toggle-git"
               onClick={this.toggleGitPanel}
